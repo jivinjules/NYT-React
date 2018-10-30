@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import DeleteBtn from "../../components/DeleteBtn";
-import Jumbotron from "../../components/Jumbotron";
 import API from "../../utils/API";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
-import { Input, TextArea, FormBtn } from "../../components/Form";
+import { Input, FormBtn } from "../../components/Form";
 
 class Articles extends Component {
   state = {
@@ -58,9 +57,6 @@ class Articles extends Component {
       <Container fluid>
         <Row>
           <Col size="md-6">
-            <Jumbotron>
-              <h1>Articles to Read</h1>
-            </Jumbotron>
             <form>
               <Input
                 value={this.state.title}
@@ -74,7 +70,7 @@ class Articles extends Component {
                 name="date"
                 placeholder="date (required)"
               />
-              <TextArea
+              <Input
                 value={this.state.url}
                 onChange={this.handleInputChange}
                 name="url"
@@ -89,9 +85,7 @@ class Articles extends Component {
             </form>
           </Col>
           <Col size="md-6 sm-12">
-            <Jumbotron>
-              <h1>Saved Articles</h1>
-            </Jumbotron>
+
             {this.state.articles.length ? (
               <List>
                 {this.state.articles.map(article => (
