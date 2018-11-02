@@ -4,6 +4,8 @@ import Articles from "./pages/Articles";
 import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 import Title from './components/Title'
+import Jumbotron from './components/Jumbotron'
+import './App.css'
 
 
 const App = () => (
@@ -11,10 +13,11 @@ const App = () => (
      
       <div>
         <Title />
+        <Jumbotron />
         <Switch>
         <Route exact path='/' component={Articles} />
-        <Route exact path='/Articles' component={Articles} />
-        <Route path='/Articles/:id' component={Detail} />
+        <Route exact path='/articles' component={Articles} />
+        <Route path='/articles/:id' component={Detail} />
         <Route component={NoMatch} />
         </Switch>
         </div>
