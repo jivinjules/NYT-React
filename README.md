@@ -8,4 +8,4 @@ NPM packages used: momentjs `npm install moment`, axios `npm install axios`, mon
 ## Heroku Link
 ...coming
 
-![screnshot1]('/client/public/screenshot1.png')
+![screenshot1]('./client/public/screenshot1.png')
