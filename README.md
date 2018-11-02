@@ -9,5 +9,5 @@ NPM packages used: momentjs `npm install moment`, axios `npm install axios`, mon
 ...coming
 
 ## Screenshots
-![screenshot1](/client/public/screenshot1.png)
-![screenshot2](/client/public/screenshot2.png)
+![screenshot1](/scripts/screenshot1.png)
+![screenshot2](/scripts/screenshot2.png)
