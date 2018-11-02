@@ -59,10 +59,11 @@ class Articles extends Component {
   render() {
     return (
       <Container fluid>
-        <Row>
+      <div className='search'>
+        <Row >
           <Col size="md-12">
           <br/>
-            <form>
+            <form >
               <h5>Search for a Topic!</h5>
               <Input
                 value={this.state.topic}
@@ -75,16 +76,16 @@ class Articles extends Component {
                 value={this.state.startYear}
                 onChange={this.handleStartYear}
                 name="startYear"
-                placeholder="Start Date"
+                placeholder="Start Date (ex. 2005)"
               />
                <h5>Enter an End Year!</h5>
               <Input
                 value={this.state.endYear}
                 onChange={this.handleEndYear}
                 name="endYear"
-                placeholder="End Year"
+                placeholder="End Year (ex. 2010)"
               />
-              <FormBtn
+              <FormBtn id='form'
                 onClick={this.handleFormSubmit}
               >
                 Find Articles
@@ -92,8 +93,9 @@ class Articles extends Component {
             </form>
           </Col>
         </Row>
-    
+    </div>
 
+      <div className='search'>
           <Row>
           <Col size="md-12">
             {this.state.articles.length ? (
@@ -104,15 +106,16 @@ class Articles extends Component {
                     title={article.headline.main}
                     date={article.pub_date}
                     url={article.web_url}
-                  ><button><a href={article.web_url}>Read it!{' '}</a></button>{' '}{article.headline.main}{"  "} published on {moment(article.pub_date).format('LL')}
-                  </ListItem>
+                  ><button id='read' ><a href={article.web_url}>Read it!{' '}<i className="far fa-newspaper"></i></a></button>{' '}{article.headline.main}{"  "} published on {moment(article.pub_date).format('LL')}
+                 <button id='save' >SAVE</button> </ListItem>
                 ))}
               </List>
             ) : (
-                <h3>No Results to Display</h3>
+                <h3 id='none'>No Results to Display</h3>
               )}
           </Col>
         </Row>
+        </div>
       </Container>
     );
   }

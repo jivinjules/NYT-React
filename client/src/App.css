@@ -1,4 +1,44 @@
-h5 {
+h5, #none {
     font-family: 'Bungee Shade', cursive;
 }
 
+html {
+    font-family: 'Barlow', sans-serif;
+ }
+
+.search {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+#form, #read, #save {
+    background-color: #eb6864;
+    border: none;
+}
+
+#read, #save {
+   border-radius: 2px;
+   padding: 3px;
+}
+
+.list-overflow-container li a {
+text-decoration: none !important;
+color: white;
+}
+
+a {
+    color: white !important
+}
+
+.list-overflow-container:hover, li:hover, a:hover {
+    opacity: .7;
+}
+#form:hover {
+    opacity: .7;
+}
+
+#save {
+    float: right;
+    color: white;
+    cursor: pointer;
+}
