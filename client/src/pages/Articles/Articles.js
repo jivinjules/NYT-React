@@ -106,7 +106,7 @@ class Articles extends Component {
                     title={article.headline.main}
                     date={article.pub_date}
                     url={article.web_url}
-                  ><button id='read' ><a href={article.web_url}>Read it!{' '}<i className="far fa-newspaper"></i></a></button>{' '}{article.headline.main}{"  "} published on {moment(article.pub_date).format('LL')}
+                  ><button id='read' ><a href={article.web_url}>Read it!{' '}<i className="far fa-newspaper"></i></a></button>{' '}  <Link to={"/articles/" + article._id} id='link'>{article.headline.main}</Link>{"  "} published on {moment(article.pub_date).format('LL')}
                  <button id='save' >SAVE</button> </ListItem>
                 ))}
               </List>

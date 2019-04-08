@@ -42,3 +42,9 @@ a {
     color: white;
     cursor: pointer;
 }
+
+a#link {
+    color: black !important;
+    cursor: pointer;
+    text-decoration: none !important;
+}
