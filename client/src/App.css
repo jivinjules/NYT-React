@@ -6,10 +6,10 @@ html {
     font-family: 'Barlow', sans-serif;
  }
 
-.search {
+/* .search {
     margin-left: 150px;
     margin-right: 150px;
-}
+} */
 
 #form, #read, #save {
     background-color: #eb6864;

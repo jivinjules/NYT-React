@@ -5,9 +5,9 @@ const axios = require("axios");
 
 const API = {
      getArticles: function (query, startYear, endYear) {
-        const BASEURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=";
-        const APIKEY = "26575027-5eb9-489f-825d-4cc7ae879237";
-        return axios.get(BASEURL + APIKEY + "&q=" + query + "&begin_date=" + startYear + "0101&end_date=" + endYear + "0101");
+        const BASEURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=";
+        const APIKEY = "0X850GfA7vD202QsMQF9KsFpxHeNYz0j";
+        return axios.get(BASEURL + query + "&api-key=" + APIKEY);
     },
 
     saveArticle: function(articleData) {

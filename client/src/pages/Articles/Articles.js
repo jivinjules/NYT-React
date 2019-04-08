@@ -71,7 +71,7 @@ class Articles extends Component {
                 name="topic"
                 placeholder="Topic (required)"
               />
-               <h5>Enter a Start Year!</h5>
+               {/* <h5>Enter a Start Year!</h5>
               <Input
                 value={this.state.startYear}
                 onChange={this.handleStartYear}
@@ -84,7 +84,7 @@ class Articles extends Component {
                 onChange={this.handleEndYear}
                 name="endYear"
                 placeholder="End Year (ex. 2010)"
-              />
+              /> */}
               <FormBtn id='form'
                 onClick={this.handleFormSubmit}
               >
